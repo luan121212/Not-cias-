@@ -1,1 +1,45 @@
-
+brazil-news-platform/
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   └── database.js
+│   │   ├── controllers/
+│   │   │   └── newsController.js
+│   │   ├── services/
+│   │   │   └── newsScraperService.js
+│   │   └── server.js
+│   ├── .env.example
+│   └── package.json
+└── frontend/
+    ├── src/
+    │   ├── components/
+    │   │   ├── Header.jsx
+    │   │   ├── NewsCard.jsx
+    │   │   └── SidebarTrends.jsx
+    │   ├── App.jsx
+    │   └── main.jsx
+    ├── .env.example
+    └── package.json
+backend/package.jso
+{
+  "name": "brazil-news-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+PORT=5000
+NEWS_API_KEY=sua_chave_aqui_se_usar_newsapi
+PORT=5000
+NEWS_API_KEY=sua_chave_aqui_se_usar_newsapi
